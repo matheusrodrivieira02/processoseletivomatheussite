@@ -23,12 +23,12 @@ type TableItem = {
     pretensao_salarial: string,
     habilidades: string,
     sobre_voce: string,
-    status: "aprovado" | "revisar",
+    status: "Aprovado" | "Revisar",
 }
 
 const statusStyles = {
-  aprovado: "bg-green-100 text-green-700",
-  revisar: "bg-yellow-100 text-yellow-700",
+  Aprovado: "bg-green-100 text-green-700",
+  Revisar: "bg-yellow-100 text-yellow-700",
 }
 
 export function DataTable({ data }: { data: TableItem[] }) {
