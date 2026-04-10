@@ -32,6 +32,7 @@ const statusStyles = {
 }
 
 export function DataTable({ data }: { data: TableItem[] }) {
+  
   return (
     <div className="rounded-md bg-white p-4">
       <div className="max-h-[375px] overflow-auto">
@@ -70,8 +71,7 @@ export function DataTable({ data }: { data: TableItem[] }) {
                 <TableCell><span suppressHydrationWarning>{item.sobre_voce}</span></TableCell>
                 <TableCell>{item.habilidades}</TableCell>
                 <TableCell>{item.porque_trabalhar_aqui}</TableCell>
-                <TableCell><span suppressHydrationWarning>{new Date(item.created_at).toLocaleString("pt-BR")}</span></TableCell>
-
+                <TableCell> {item.created_at} </TableCell>
               </TableRow>
             ))}
           </TableBody>
